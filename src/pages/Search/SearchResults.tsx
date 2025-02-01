@@ -1,15 +1,19 @@
 import { FC, useEffect, useState } from 'react';
-import { Table, Button, Typography, Space, Row } from 'antd';
+import { Table, Button, Typography, Space, Row, Grid } from 'antd';
 import { formatSaleDate } from '../../utils/helpers/formatdate';
 import { Car, CarApiResponse } from '../../types/interfaces';
 import { initialCarApiResponse } from './Search';
+import CarList from '../../components/Cars/CarsList';
 
 const { Text } = Typography
 
+const { useBreakpoint } = Grid;
 
 const VehicleTable: FC<{ carsData: CarApiResponse, filter: any, loading: boolean, handlePageChange: (page: number) => void }> = ({ loading, carsData = initialCarApiResponse, filter }) => {
     const [dataSource, setdataSoruce] = useState<any>([])
     const { from, to, total } = carsData?.meta
+
+    const screens = useBreakpoint(); // 
 
     useEffect(() => {
         setdataSoruce(carsData.data || [])
@@ -20,7 +24,7 @@ const VehicleTable: FC<{ carsData: CarApiResponse, filter: any, loading: boolean
             title: 'Image',
             dataIndex: 'image',
             key: 'image',
-            render: (_:any, record: Car) => (
+            render: (_: any, record: Car) => (
                 <img
                     src={record?.lots?.[0]?.images?.normal?.[0] || "https://via.placeholder.com/150"}
                     alt="vehicle"
@@ -100,13 +104,15 @@ const VehicleTable: FC<{ carsData: CarApiResponse, filter: any, loading: boolean
                     Showing {from} – {to} of {total} Listings
                 </Text>
             </Row>
-            <Table
+            {screens.md ?  <Table
                 dataSource={dataSource}
                 columns={columns}
                 pagination={false}
                 bordered
                 loading={loading}
             />
+                :<CarList cars={dataSource} loading={loading} /> 
+            }
         </div>
     );
 };

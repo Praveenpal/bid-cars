@@ -14,7 +14,7 @@ const { Search } = Input;
 const AppHeader = () => {
 
   const screens = useBreakpoint(); // 
-  
+
   return (
     <Header style={styles.header} className="header">
       {/* Logo on the left */}
@@ -38,7 +38,7 @@ const AppHeader = () => {
 
       {/* Buttons on the right */}
       <div style={styles.buttonContainer}>
-      {screens.xs && <Button type="text" style={styles.signInButton}>
+      {screens.md && <Button type="text" style={styles.signInButton}>
           <Avatar size="small" icon={<UserOutlined />} style={styles.avatar} />
           Sign In
         </Button>}

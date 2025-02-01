@@ -59,7 +59,7 @@ const VehicleTable: FC<{ carsData: CarApiResponse, filter: any, loading: boolean
                 <Text >{record?.lots?.[0]?.damage?.main?.name}</Text>
                 <Text >{record?.lots?.[0]?.damage?.second?.name}</Text>
             </Space>,
-            responsive: ["md"]
+            responsive: ["lg"]
         },
         {
             title: 'Sale Info',
@@ -70,7 +70,7 @@ const VehicleTable: FC<{ carsData: CarApiResponse, filter: any, loading: boolean
                 <Text >ITEM #. {record?.lots?.[0]?.selling_branch?.number}</Text>
                 <Text >{formatSaleDate(record?.lots?.[0]?.sale_date)}</Text>
             </Space>,
-            responsive: ["md"]
+            responsive: ["lg"]
         },
         {
             title: 'Bids',

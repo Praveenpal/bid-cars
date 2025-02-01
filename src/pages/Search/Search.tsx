@@ -118,16 +118,16 @@ const Search = () => {
           }}
         >
 
-          <Menu mode="inline" defaultSelectedKeys={['1']} className='filter-menu' >
+          <Menu mode="inline"  className='filter-menu' >
             <Menu.ItemGroup>
               <Menu.Item key="1">
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                  <span>Search Filters</span>
-                  <Switch
+                  <h3><strong>Search Filters</strong></h3>
+                  {/* <Switch
                     size='small'
                     checked={filters.selectVehiclesOnly}
                     onChange={(checked) => handleFilterChange('selectVehiclesOnly', checked)}
-                  />
+                  /> */}
                 </div>
               </Menu.Item>
               <Menu.Item key="2">
@@ -140,7 +140,7 @@ const Search = () => {
                   />
                 </div>
               </Menu.Item>
-              <Menu.Item key="3">
+              {/* <Menu.Item key="3">
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                   <span>Clean Titles</span>
                   <Switch
@@ -149,7 +149,7 @@ const Search = () => {
                     onChange={(checked) => handleFilterChange('cleanTitles', checked)}
                   />
                 </div>
-              </Menu.Item>
+              </Menu.Item> */}
             </Menu.ItemGroup>
           </Menu>
         </Sider>
@@ -162,15 +162,15 @@ const Search = () => {
           width={300}
         >
           <Menu mode="inline" defaultSelectedKeys={['1']} className="filter-menu">
-            <Menu.ItemGroup title="Search Filters">
+            <Menu.ItemGroup >
               <Menu.Item key="1">
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                  <span>Select Vehicles Only</span>
-                  <Switch
+                  <span>Search Filters</span>
+                  {/* <Switch
                     size="small"
                     checked={filters.selectVehiclesOnly}
                     onChange={(checked) => handleFilterChange('selectVehiclesOnly', checked)}
-                  />
+                  /> */}
                 </div>
               </Menu.Item>
               <Menu.Item key="2">
@@ -211,7 +211,7 @@ const Search = () => {
             style={{ margin: '16px' }}
             id="filter-button"
           >Filter</Button>}
-          
+
           {filters.buyItNow ?
             < Title level={2} > Search Results: Buy it now</Title>
             : < Title level={2} > Discover Your Right Car</Title>}

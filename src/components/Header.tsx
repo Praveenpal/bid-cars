@@ -1,7 +1,5 @@
-import { Link } from 'react-router-dom';
 import { Layout, Button, Avatar, Typography, Grid } from 'antd';
-import { GlobalOutlined, PhoneOutlined,  UserOutlined } from '@ant-design/icons';
-import logo from '../assets/logo.svg';
+import { GlobalOutlined, PhoneOutlined, UserOutlined } from '@ant-design/icons';
 import './styles/header.css';
 import SearchInput from './SearchInput';
 
@@ -14,15 +12,17 @@ const AppHeader = () => {
 
   const screens = useBreakpoint(); // 
 
+  const logoSize = screens.md ? 4 : 5 
+
   return (
     <>
       <Header style={styles.header} className="header">
         {/* Logo on the left */}
         <div style={styles.logo}>
-          <Title level={3} style={styles.title} >
+          <Title level={logoSize} style={styles.title} >
             {/* <Link to="/" style={{color:'#fffff'}}> */}
             USA Cars ASI Company
-              {/* <img src={logo} alt="car-logo" style={styles.logoImage} /> */}
+            {/* <img src={logo} alt="car-logo" style={styles.logoImage} /> */}
             {/* </Link> */}
           </Title>
         </div>
@@ -83,7 +83,7 @@ const styles = {
   },
   title: {
     margin: 0,
-    color:'white'
+    color: 'white'
   },
   logoImage: {
     height: '40px',
@@ -116,7 +116,7 @@ const styles = {
   },
   avatar: {
     backgroundColor: '#f0f0f0',
-    color:'black'
+    color: 'black'
   },
   registerButton: {
     backgroundColor: '#FFC107',

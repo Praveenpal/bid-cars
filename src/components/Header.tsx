@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Layout, Button, Avatar, Typography, Grid } from 'antd';
 import { GlobalOutlined, PhoneOutlined,  UserOutlined } from '@ant-design/icons';
-import logo from '../assets/abm-logo.svg';
+import logo from '../assets/logo.svg';
 import './styles/header.css';
 import SearchInput from './SearchInput';
 
@@ -19,10 +19,11 @@ const AppHeader = () => {
       <Header style={styles.header} className="header">
         {/* Logo on the left */}
         <div style={styles.logo}>
-          <Title level={3} style={styles.title}>
-            <Link to="/">
-              <img src={logo} alt="car-logo" style={styles.logoImage} />
-            </Link>
+          <Title level={3} style={styles.title} >
+            {/* <Link to="/" style={{color:'#fffff'}}> */}
+            USA Cars ASI Company
+              {/* <img src={logo} alt="car-logo" style={styles.logoImage} /> */}
+            {/* </Link> */}
           </Title>
         </div>
 
@@ -73,7 +74,7 @@ const styles = {
     justifyContent: 'space-between',
     padding: '0 24px',
     top: 0,
-    backgroundColor: '#2158F5',
+    backgroundColor: '#4F359B',
     boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)',
   },
   logo: {
@@ -82,6 +83,7 @@ const styles = {
   },
   title: {
     margin: 0,
+    color:'white'
   },
   logoImage: {
     height: '40px',

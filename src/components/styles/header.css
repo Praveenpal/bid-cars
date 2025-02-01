@@ -1,5 +1,5 @@
 header {
-    color: #2158f5;
+    color: #4F359B;
 }
 
 .header {
@@ -13,7 +13,7 @@ header {
     transition: transform .15s ease;
     align-items: center;
     justify-content: space-between;
-    background-color: #2158F5;
+    background-color: #4F359B;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -29,7 +29,7 @@ header {
     transition: transform .25sease;
     align-items: center;
     justify-content: space-between;
-    background-color: #23254C;
+    background-color: #324376;
     transform-origin: top;
 }
 .left-nav-panel{

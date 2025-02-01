@@ -48,7 +48,7 @@ button:focus-visible {
 }
 
 .blue-text {
-  color: #2158f5;
+  color: #4F359B;
   text-decoration: none;
 }
 
@@ -57,7 +57,7 @@ button:focus-visible {
 }
 
 .breadcrumbs {
-  color: #2158f5;
+  color: #4F359B;
   font-size: smaller;
 }
 
@@ -71,7 +71,7 @@ button:focus-visible {
 
 .carslist-btn-details {
   color: #ffffff;
-  background-color: #2158F5;
+  background-color: #4F359B;
   font-size: 16px;
   line-height: 20px;
 }

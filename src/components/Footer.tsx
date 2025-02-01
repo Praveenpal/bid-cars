@@ -14,8 +14,8 @@ const AppFooter = () => {
             <PhoneOutlined /> +1 (971) 308-9263
           </div>
           <div>
-            <MailOutlined /> export@autobidmaster.com
-          </div>
+            <MailOutlined /> export@usacarsasicompany.com
+          </div>#
           <div>
             <ClockCircleOutlined /> Monday-Friday, 06:00AM-02:00PM
           </div>
@@ -30,7 +30,7 @@ const AppFooter = () => {
         </Col>
         <Col xs={24} sm={12} md={6}>
           <Text strong className='white-text'>Company Information</Text>
-          <div><Link href="#">About AutoBioMaster</Link></div>
+          <div><Link href="#">About USA Cars Asicompany</Link></div>
           <div><Link href="#">Blog</Link></div>
           <div><Link href="#">Careers</Link></div>
           <div><Link href="#">Contact Us</Link></div>
@@ -45,7 +45,7 @@ const AppFooter = () => {
       <Divider />
       <Row justify="center">
         <Col>
-          <Text className='white-text'>Copyright © 2025 AutoBioMaster. LLC All Rights Reserved.</Text>
+          <Text className='white-text'>Copyright © 2025 USA Cars Asicompany. LLC All Rights Reserved.</Text>
         </Col>
       </Row>
     </Footer>
@@ -54,7 +54,7 @@ const AppFooter = () => {
 
 const styles = {
   footer: {
-    backgroundColor: '#001529',
+    backgroundColor: '#2E294E',
     color: '#fff',
   },
   text: {

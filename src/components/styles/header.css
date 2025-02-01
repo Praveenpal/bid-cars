@@ -1,0 +1,72 @@
+header {
+    color: #2158f5;
+}
+
+.header {
+    height: 60px;
+    display: flex;
+    padding: 0 30px;
+    z-index: 20;
+    position: relative;
+    flex-wrap: nowrap;
+    transform: translate3d(0, 0, 0);
+    transition: transform .15s ease;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2158F5;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+  
+  /* Tablet styles */
+  @media (max-width: 992px) {
+    .header {
+      flex-wrap: wrap; /* Allow wrapping of header content */
+      padding: 12px 24px; /* Reduce padding */
+    }
+  
+    .logo {
+      flex: 1 1 100%; /* Logo takes full width */
+      justify-content: center; /* Center logo */
+      margin-bottom: 12px; /* Add spacing below logo */
+    }
+  
+    .search-container {
+      flex: 1 1 100%; /* Search input takes full width */
+      margin: 0 0 12px 0; /* Adjust margins */
+    }
+  
+    .button-container {
+      flex: 1 1 100%; /* Buttons take full width */
+      justify-content: center; /* Center buttons */
+      align-items: center;
+    }
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 768px) {
+    .header {
+      padding: 8px 16px; /* Further reduce padding */
+    }
+  
+    .logo img {
+      height: 30px; /* Reduce logo size */
+    }
+  
+    .search-container {
+      margin: 0 0 8px 0; /* Adjust margins */
+    }
+  
+    .search-input {
+      width: 100%; /* Full width for search input */
+    }
+  
+    .button-container {
+      gap: 8px; /* Reduce gap between buttons */
+    }
+  
+    .registerButton {
+      padding: 0 12px; /* Reduce padding for buttons */
+    }
+  }

@@ -1,0 +1,89 @@
+.filter-menu {
+    border-radius: 0 8px 0 0;
+    background-color: #E6ECFD;
+    font-size: small;
+}
+
+.join-auction-btn {
+    color: #ffffff;
+    background-color: #217E02;
+    padding: 7px 14px;
+    font-size: 14px;
+    line-height: 16px;
+    
+    width: 100%;
+    cursor: pointer;
+    display: flex
+;
+    position: relative;
+    max-width: 100%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: box-shadow .1sease, background-color .2sease;
+    align-items: center;
+    font-weight: 700;
+    user-select: none;
+    border-radius: 25px;
+    text-transform: uppercase;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.bid-now-btn {
+    color: #ffffff;
+    background-color: #2158F5;
+    padding: 7px 14px;
+    font-size: 14px;
+    line-height: 16px;
+    
+    width: 100%;
+    cursor: pointer;
+    display: flex
+;
+    position: relative;
+    max-width: 100%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: box-shadow .1sease, background-color .2sease;
+    align-items: center;
+    font-weight: 700;
+    user-select: none;
+    border-radius: 25px;
+    text-transform: uppercase;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.custom-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .custom-pagination .ant-pagination-item-active {
+    background-color: #1890ff !important;
+    border-color: #1890ff !important;
+  }
+  
+  .custom-pagination .ant-pagination-item-active a {
+    color: white !important;
+  }
+  
+  .custom-pagination .ant-pagination-item {
+    border-radius: 8px;
+  }
+  
+  .custom-pagination .ant-pagination-item a {
+    font-weight: 500;
+  }
+  
+  .custom-pagination .ant-pagination-prev,
+  .custom-pagination .ant-pagination-next {
+    border-radius: 8px;
+  }
+  
+  .custom-pagination .ant-pagination-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  

@@ -1,7 +1,12 @@
 .filter-menu {
-    border-radius: 0 8px 0 0;
+    border-radius: 10px;
     background-color: #E6ECFD;
     font-size: small;
+    padding: 14px 9px 8px 7px;
+}
+
+.slider-filter {
+    padding-right: 5px;
 }
 
 .join-auction-btn {
@@ -52,6 +57,10 @@
     text-transform: uppercase;
     justify-content: center;
     text-decoration: none;
+}
+
+.ant-table-thead {
+    display: table-header-group;
 }
 
 .custom-pagination {

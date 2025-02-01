@@ -1,4 +1,4 @@
-export const formatSaleDate = (saleDate: string): string => {
+export const formatSaleDate = (saleDate: string |null): string => {
     if (!saleDate) return "N/A"; // Handle empty/null cases
   
     const date = new Date(saleDate);

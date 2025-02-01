@@ -1,5 +1,4 @@
 import axios from "axios";
-import { notification } from "antd";
 
 // Create an Axios instance
 const api = axios.create({
@@ -30,7 +29,6 @@ export const apiCall = async (method:string, url:string, params: object = {}, da
       data,    // Request body (for POST, PUT)
       ...config, // Additional Axios configuration (e.g., override headers if needed)
     });
-    console.log("🚀 ~ apiCall ~ response:", response)
 
     return response.data;
   } catch (error:any) {

@@ -52,6 +52,15 @@ button:focus-visible {
   text-decoration: none;
 }
 
+.white-text {
+  color: #ffffff;
+}
+
+.breadcrumbs {
+  color: #2158f5;
+  font-size: smaller;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
